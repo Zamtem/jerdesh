@@ -10,6 +10,34 @@
 <script src="js/jquery.mobile-1.0a2.min.js"></script>
 <script src="cordova.js"></script>
 <script src="js/mine.js"></script>
+
+<script>
+function showUser(str)
+{
+if (str=="")
+  {
+  document.getElementById("txtHint").value="";
+  return;
+  } 
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").value+=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","http://jerdesh/app/getuser.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
 </head>
 <body>
 <div data-role="page" id="page1" data-theme="e">
@@ -40,6 +68,10 @@
   <div data-role="content">
     <div class="addr">
       <h2>О нас</h2>
+      
+<div id="txtHint"> 
+Дешица
+</div>
     </div> 
   </div>
   <div data-role="footer" data-position="fixed">
