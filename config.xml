@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "avtolab"
+    version   = "1.0.0">
+
+<name>Жердеш</name>
+
+<description>
+
+</description>
+
+<author href="https://jerdesh.ru" email="jerdesh.ru@mail.ru">
+ZAMIR J.T.
+</author>
+<icon src="icon.png" />
+<gap:splash src="splash.png" />
+<access origin="http://jerdesh.ru" subdomains="true" />
+</widget>
