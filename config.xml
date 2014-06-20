@@ -21,5 +21,5 @@ ZAMIR J.T.
 <gap:splash src="splash.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
 <gap:splash src="splash.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 <gap:splash src="splash.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
-<access origin="http://jerdesh.ru" subdomains="true" />
+<access origin="*" subdomains="true" />
 </widget>
