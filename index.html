@@ -11,33 +11,6 @@
 <script src="cordova.js"></script>
 <script src="js/mine.js"></script>
 <script src="json.js"></script>
-<script>
-function showUser(str)
-{
-if (str=="")
-  {
-  document.getElementById("txtHint").value="";
-  return;
-  } 
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("txtHint").value+=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("GET","http://jerdesh/app/getuser.php?q="+str,true);
-xmlhttp.send();
-}
-</script>
 </head>
 <body>
 <div data-role="page" id="page1" data-theme="e">
@@ -54,7 +27,7 @@ xmlhttp.send();
       <li><a href="http://jerdesh.ru/app/kojko_mesto_kerek.php#kojko_mesto_kerek" data-prefetch>Койко место керек</a></li>
 	  <li><a href="http://jerdesh.ru/app/satam.php#satam">Сатам</a></li>
 	  <li><a href="http://jerdesh.ru/app/satyp_alam.php#satyp_alam">Сатып алам</a></li>
-	  <li><a href="http://jerdesh.ru/app/jumush.php#jumush">Жумуш</a></li>
+	  <li><a href="json.html">Жумуш</a></li>
 	  <li><a href="#about">Иш</a></li>
 	 
     </ul>
@@ -69,7 +42,7 @@ xmlhttp.send();
     <div class="addr">
       <h2>О нас</h2>
      <div id="sales">
-<script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+<script src="http://sushimania.su/test.php?callback=updateSales"></script>
  </div>
 
     </div> 
