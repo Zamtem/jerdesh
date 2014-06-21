@@ -10,7 +10,7 @@
 <script src="js/jquery.mobile-1.0a2.min.js"></script>
 <script src="cordova.js"></script>
 <script src="js/mine.js"></script>
-
+<script src="json.js"></script>
 <script>
 function showUser(str)
 {
@@ -68,13 +68,10 @@ xmlhttp.send();
   <div data-role="content">
     <div class="addr">
       <h2>О нас</h2>
-    <form>
-<input type="radio" name="users" value="1" onchange="showUser(this.value)"><br>I have a bike<br>
-<input type="radio" name="users" value="2" onchange="showUser(this.value)"><br>I have a car 
-</form>  
-<div id="txtHint"> 
-Дешица
-</div>
+     <div id="sales">
+<script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+ </div>
+
     </div> 
   </div>
   <div data-role="footer" data-position="fixed">
